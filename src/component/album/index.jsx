@@ -21,7 +21,7 @@ const Album = ({ albumName, groups }) => {
         <h1>{albumName}</h1>
         {selectedGroup && (
           <span>
-            {selectedGroup?.total} of {selectedGroup?.total}
+            {selectedGroup?.total} images
           </span>
         )}
       </div>

@@ -5,6 +5,18 @@
   grid-gap: 0.54%
 }
 
+@media screen and (max-width: 1000px) {
+  .images-layout {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .images-layout {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .images-item{
   display: flex;
   flex-direction: column;
