@@ -4,7 +4,6 @@ import AlbumImages from "../album-images";
 
 const Album = ({ albumName, groups }) => {
   const [selectedGroup, setSelectedGroup] = useState(groups[0]);
-  const [thumbnails, setThumbnails] = useState([]);
 
   useEffect(() => {
     setSelectedGroup(groups[0]);

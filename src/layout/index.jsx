@@ -3,13 +3,12 @@ import Logo from "../asset/dataspan_logo.png";
 import "./index.css";
 import Album from "../component/album";
 import { fetchAlbumData, fetchS3Bucket } from "./helper";
-import Slider from "../component/slider";
+// import Slider from "../component/slider";
 
 const MainLayout = () => {
   const [albums, setAlbums] = useState([]);
   const [groups, setGroups] = useState([]);
   const [filters, setFilters] = useState([]);
-  const [currentFilter, setCurrentFilter] = useState([]);
 
   const fetchAlbums = async () => {
     const doc = await fetchS3Bucket();
