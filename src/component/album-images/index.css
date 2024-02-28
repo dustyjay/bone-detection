@@ -1,0 +1,25 @@
+.images-layout{
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  grid-template-rows: 120px;
+  grid-gap: 0.54%
+}
+
+.images-item{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.images-image{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.images-text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
